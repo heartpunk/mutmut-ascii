@@ -89,15 +89,15 @@ status_by_exit_code = defaultdict(lambda: 'suspicious', {
 })
 
 emoji_by_status = {
-    'survived': '🙁',
-    'no tests': '🫥',
-    'timeout': '⏰',
-    'suspicious': '🤔',
-    'skipped': '🔇',
-    'check was interrupted by user': '🛑',
+    'survived': 'SURV',
+    'no tests': 'NONE',
+    'timeout': 'TIME',
+    'suspicious': 'SUSP',
+    'skipped': 'SKIP',
+    'check was interrupted by user': 'INTR',
     'not checked': '?',
-    'killed': '🎉',
-    'segfault': '💥',
+    'killed': 'KILL',
+    'segfault': 'SEGF',
 }
 
 exit_code_to_emoji = {
